@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <section class="registro-section">
+        <div>
+            <form class="registro"
+                oninput="(x.value)=parseFloat(a.value) / (parseFloat(b.value) * parseFloat(b.value))">
+                <ul>
+                        Peso <input type="text" id="a" placeholder="Ingresa tu peso"> <br>
+                        Altura <input type="text" id="b" placeholder="Ingresa Altura en metros"> <br>
+                        Indice de Masa Muscular <output name="x" id="masa" for="a b"></output>
+                    </ul>
+                </form>
+            </div>
+</section>
+ 
+<img id="myImage" onclick="changeImage()" src="img/Chad.jpg" width="60" height="98">
+ 
+<script>
+
+function changeImage() {
+
+    var el = document.getElementById('masa').value;
+    console.log(el);
+    var image = document.getElementById('myImage');
+    /*if (image.src.match("img/footer.jpg")) {
+        image.src = "img/Chad.jpg";
+    } else {
+        image.src = "img/footer.jpg";
+    }*/
+
+    if (image.src.match("img/Chad.jpg") && el >= 25) {
+        image.src = "img/gc.jpg";
+    } else if (image.src.match("img/gc.jpg")){
+        image.src = "img/footer.jpg";
+    }
+    
+    if (image.src.match("img/Chad.jpg") && el <= 25) {
+        image.src = "img/persona.jpg";
+    } else if (image.src.match("img/persona.jpg")){
+        image.src = "img/persona1.jpeg";
+    }
+
+}
+ 
+</script>
+ 
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Fitmax</title>
+    <link rel="shortcut icon" href="img/Ponte Fuertote.png">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+
+
+<body>
+    <header class="encabezado">
+        <a href="index.html" class="logo">
+            Fit<span class="logo2">max</span>
+        </a>
+       <p class="registro-titulo">
+           Regis<span class="registro-titulo2">tro</span>
+       </p>
+    <ul class="navbar">
+        <li><a href="iniciosesion.html"> Ingresar</a></li>
+        <li><a href="index.html"> Regresar al menu </a></li>
+    </ul class>
+</div>
+</header>
+    <section class="registro-section">
+            <div>
+                <img src="img/registro.png" width="150" height="100" class="img-registro">
+            </div>
+            <div>
+                <form class="registro"
+                    oninput="(x.value)=parseInt(a.value) / (parseFloat(b.value) * parseFloat(b.value))">
+                    <ul>
+                        <li> Nombre: <input type="text" name="nombre" autofocus="autofocus" pattern="[a-zA-Z]" required
+                                    placeholder="Ingresa tu Nombre"></li>
+                        <li> Apellido: <input type="text" name="apellido" required placeholder="Ingresa tu Apellido"></li>
+                        <li> Nombre de Usuario: <input type="text" name="nombreUsuario"
+                                    placeholder="Ingresa Nombre de Usuario"> </li>
+                        <li> Edad: <input type="number" name="edad" min="0" max="100" required step="1"> </li>
+                        <li>
+                            Sexo:
+                            <datalist id="sexo">
+                                <option value="Hombre">
+                                <option value="Mujer">
+                            </datalist>
+                            <input name="sexo" list="sexo" required placeholder="Ingresa tu sexo"></li>
+                        <li> Correo: <input type="email" name="emails" placeholder="Ingresa tu correo"> </li>
+                        <li> Contraseña: <input type="password" name="contraseña" placeholder="Ingrese contraseña"></li>
+                            Peso <input type="text" id="a" placeholder="Ingresa tu peso"> <br>
+                            Altura <input type="text" id="b" placeholder="Ingresa Altura en metros"> <br>
+                            Indice de Masa Muscular <input name="x" id="maza" for="a b"></input>
+                        </ul>
+                    </form>
+                </div>
+    </section>
+    <footer>
+        <div class="barra-footer">
+                <p>
+                    Inovatec no nos financio <br>
+                    Derechos reservados 
+                </p>
+        </div>
+    </footer>
+</body>
+
+</html>
